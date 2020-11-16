@@ -1,6 +1,8 @@
 /*
 The Story:
-Bob is working as a bus driver. However, he has become extremely popular amongst the city's residents. With so many passengers wanting to get aboard his bus, he sometimes has to face the problem of not enough space left on the bus! He wants you to write a simple program telling him if he will be able to fit all the passengers.
+Bob is working as a bus driver. However, he has become extremely popular amongst the city's residents. With so many passengers wanting to get aboard his bus, 
+he sometimes has to face the problem of not enough space left on the bus! He wants you to write a simple program telling him if he will be able to fit all the 
+passengers.
 
 Task Overview:
 You have to write a function that accepts three parameters:
@@ -17,6 +19,6 @@ enough(100, 60, 50);
 // 10, He can't fit 10 out of 50 waiting
 */
 
-function enough(cap, on, wait) {
-  // your code here
+const enough = (cap, on, wait) => {
+  return cap > on + wait ? 0 : (on + wait) - cap;
 }
